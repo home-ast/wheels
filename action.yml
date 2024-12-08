@@ -91,7 +91,7 @@ runs:
     - shell: bash
       id: pull
       run: |
-        name="ghcr.io/home-assistant/wheels/${{ inputs.arch }}/${{ inputs.tag }}/${{ inputs.abi }}:${{ steps.version.outputs.version }}"
+        name="ghcr.io/home-ast/wheels/${{ inputs.arch }}/${{ inputs.tag }}/${{ inputs.abi }}:${{ steps.version.outputs.version }}"
         docker pull "$name"
         echo "name=$name" >> $GITHUB_OUTPUT
 
